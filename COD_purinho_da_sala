@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	setlocale(LC_ALL, "Portuguese");
+	char entrada,verbo,entrada2;
+	do{
+		printf("opções:  \n(C)onjugar um verbo \n(S)air do progama \nescolha a entrada e tecle <Enter> ");
+		scanf(" %c", &entrada);
+	//	system("cls");
+	} while(entrada != 'S' && entrada != 'C');
+	//if(entrada == 'C'){
+	switch (entrada ){
+		case 'C': 
+			printf("            ----------- conjugar um verbo \n");
+			printf("            ----- Digite o verbo que quer conjugar : ");	
+			scanf(" %c",&verbo);
+			printf("\n     -----ATENCAO!----- FUNCIONALIDADE AINDA NAO INPLEMENTADA!!!");
+			entrada = 'C';
+			do{
+				printf("(C)onjugar outro verbo\nQualquer outra tecla pra Sair do programa\nEscolha e tecle <Enter>");
+			} while
+			break;
+		case 'S':{
+			break;
+		}
+	//	case default:		
+	} 
+return(0);
+}
