@@ -6,6 +6,7 @@ int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int cont;
 	char entrada, verbo;
+	//char wentrada;
 	printf("Opções:\n(C)onjugar um verbo\n(S)air do progama\nEscolha a entrada e tecle <Enter>");
 	scanf(" %c", &entrada);
 	while(entrada != 'S'){
@@ -14,11 +15,19 @@ int main(){
 				printf("      -----------Conjugar um verbo\n");
 				printf("                 Digite o verbo que quer conjugar: ");				
 				scanf(" %c", &verbo);
+				//system("pause");
 				do{
 					printf("      -----------ATENÇãO!----- FUNCIONALIDADE AINDA NãO INPLEMENTADA!!!");
 					printf("\n      -----------Opções:\n                 (C)onjugar outro verbo\n                 Qualquer outra tecla para Sair do programa\n                 Escolha a entrada e tecle <Enter>");
 					scanf(" %c", &entrada);
+					if(entrada == 'C'){
+						printf("      -----------Conjugar um verbo\n");
+						printf("                 Digite o verbo que quer conjugar: ");				
+						scanf(" %c", &verbo);
+					};
+					//scanf(" %c", &wentrada);
 				} while(entrada == 'C');
+				//} while(wentrada == 'C');
 				entrada = 'S';
 				break;
 		};
